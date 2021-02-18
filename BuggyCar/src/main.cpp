@@ -49,9 +49,9 @@ bool readPacket(ControlPacket *packet)
 void updateCarState(const ControlPacket &packet)
 {
     ///////////////////////////////////////////////////////////
-    constexpr int ServoCalibrationLeft = 900;
+    constexpr int ServoCalibrationLeft = 880;
     constexpr int ServoCalibrationLine = 1140;
-    constexpr int ServoCalibrationRight = 1490;
+    constexpr int ServoCalibrationRight = 1400;
 
     constexpr int ServoCalibrationRightDiff = ServoCalibrationRight - ServoCalibrationLine;
     constexpr int ServoCalibrationLeftDiff = ServoCalibrationLine - ServoCalibrationLeft;
